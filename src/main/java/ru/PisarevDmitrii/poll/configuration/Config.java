@@ -80,7 +80,7 @@ public class Config {
     public LocalSessionFactoryBean sessionFactory() {
         final LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan("ru.evteev.poll.entity");
+        sessionFactory.setPackagesToScan("ru.PisarevDmitrii.poll.entity");
 
         Properties hibernateProps = new Properties();
         hibernateProps.setProperty(HIBERNATE_DIALECT, env.getProperty(HIBERNATE_DIALECT));
